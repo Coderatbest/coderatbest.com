@@ -3,12 +3,12 @@
 ```bash
 # is required install nodemon in your PC
 # install with $ npm i -g nodemon
-$ cd backend/ && \
-  env $(cat ../.env) nodemon server.js
+cd backend/ && \
+env $(cat ../.env) nodemon server.js
 ```
 ## start backend with Docker-compose
-```bash
+```docker
 #--build for complile
 #-d for created process backgrond
-$ docker-compose up --build -d
+docker-compose up --build -d
 ```
