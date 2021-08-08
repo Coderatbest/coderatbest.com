@@ -4,7 +4,7 @@ services:
     environment: 
         MONGO_U: ${MONGO_U}
         MONGO_P: ${MONGO_P}
-        CON_STR: ${MONGO_P}
+        CON_STR: ${CON_STR}
     container_name: "backend"
     image: "docker.pkg.github.com/al3xdiaz/coderatbest.com/backend:latest"
     build:
