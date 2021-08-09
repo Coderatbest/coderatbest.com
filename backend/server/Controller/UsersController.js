@@ -2,9 +2,11 @@ const express = require('express');
 const service = require('../Service/UsersService');
 const _response = require('../Response')
 const router = express.Router();
+const {socket} = require('../../socket')
 
 router.get('/:parameter',(req,res)=>{
-    res.send({param:req.params.parameter})
+    socket.io.emit('message',req.params.parameter)
+    _response.success(res,{code:200})
 })
 router.post('/Login', (req, res) => {
     if (!req.body.UserName || !req.body.Password)

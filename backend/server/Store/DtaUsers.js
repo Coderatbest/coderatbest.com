@@ -1,3 +1,4 @@
+const model = require('mongoose');
 const Model = require('../Models/UserDto');
 
  const validateUser=async(User)=>{
@@ -14,3 +15,5 @@ module.exports = {
     validateUser,
     createUser
 }
+
+//Model.find().populate('User').exec((error,populate)=>{})

@@ -1,4 +1,3 @@
-const db = require('../ConectionDB');
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
@@ -28,3 +27,13 @@ const User = new Schema({
 const model = mongoose.model('Users',User);
 
 module.exports=model
+
+//example model populated
+//const model= new Schema({
+//User:{
+//    type: Schema.ObjectId,
+//    ref: 'User'
+//}})
+
+//muler
+// package for files
